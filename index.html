@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Tuition - Building a Strong Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+        header {
+            background: #6a11cb;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #6a11cb;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            padding: 1rem;
+            margin: 0;
+            font-size: 1.5rem;
+            color: #6a11cb;
+        }
+        .card p {
+            padding: 0 1rem 1rem;
+            margin: 0;
+            font-size: 1rem;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        footer a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+        .auth-section {
+            background: #f4f4f4;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .auth-section h2 {
+            color: #6a11cb;
+            text-align: center;
+        }
+        .auth-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .auth-section label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .auth-section input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .auth-section button {
+            padding: 0.7rem;
+            background: #6a11cb;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .auth-section button:hover {
+            background: #5a0fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>e-Tuition</h1>
+        <p>Building a Strong Foundation</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#auth">Sign Up / Login</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We aim to bridge the gap between qualified tutors and students by delivering personalized learning through the latest technology. Our mission is to provide high-quality, affordable home tuition for students in grades 1 to 10.</p>
+    </section>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>To become the leading platform for personalized education and create opportunities for students to excel academically.</p>
+    </section>
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" alt="Personalized Learning">
+                <h3>Personalized Learning</h3>
+                <p>Interactive and customized sessions for every student.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" alt="Affordable Tuition">
+                <h3>Affordable Tuition</h3>
+                <p>High-quality education at an affordable price.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" alt="Qualified Tutors">
+                <h3>Qualified Tutors</h3>
+                <p>Experienced tutors dedicated to student success.</p>
+            </div>
+        </div>
+    </section>
+    <section id="auth" class="auth-section">
+        <h2>Sign Up / Login</h2>
+        <form id="signup">
+            <h3>Sign Up</h3>
+            <label for="signup-name">Name</label>
+            <input type="text" id="signup-name" placeholder="Enter your name" required>
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" placeholder="Enter your email" required>
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter your password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <form id="login">
+            <h3>Login</h3>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="Enter your email" required>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 e-Tuition. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
